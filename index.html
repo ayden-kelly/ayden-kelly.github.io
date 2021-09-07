@@ -1,2 +1,1028 @@
-<head></head>
-<body>hi</body>
+<!doctype html>
+<html>
+<head>
+  
+  <!--Script that loads alert with instructions after page load is complete-->
+  <script>
+    //document.addEventListener('readystatechange', event => {if (event.target.readyState === "complete") {alert("Please read the README.txt file included with the project.");}});
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/images/icon.ico">
+  <title>The Transcontinental Railroad</title>
+
+  <style>
+    .container {
+      background-color: transparent;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom-width: 0px;
+      padding-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+    }
+    .row {
+      width: 100%;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      display: inline-block
+    }
+    .row.blockDisplay {
+      display: block;
+    }
+    .column_half {
+      width: 50%;
+      float: left;
+      margin-top: 0px;
+    }
+    .columns {
+      width: 25%;
+      float: left;
+      font-family: "Source Sans Pro";
+      color: #A5A5A5;
+      line-height: 24px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: justify;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .row .columns p {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    .container .columns h4 {
+      text-align: center;
+      color: #01B2D1;
+    }
+    .primary_header {
+      width: 100%;
+      background-color: #52bad5;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      clear: left;
+      border-bottom: 2px solid #2C9AB7;
+    }
+    .secondary_header {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color: #B3B3B3;
+      clear: left;
+    }
+    .container .secondary_header ul {
+      margin-top: 0%;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 15px;
+      padding-left: 0px;
+      width: 100%;
+    }
+    .secondary_header ul li {
+      list-style: none;
+      float: left;
+      margin-right: auto;
+      margin-top: 0px;
+      font-family: "Source Sans Pro";
+      font-weight: normal;
+      color: #FFFFFF;
+      letter-spacing: 1px;
+      margin-left: auto;
+      text-align: center;
+      width: 16%;
+      transition: all 0.3s linear;
+    }
+    .secondary_header ul li:hover {
+      color: #717070;
+      cursor: pointer;
+    }
+    .left_article {
+      background-color: transparent;
+      width: 60%;
+      float: left;
+      font-family: "Source Sans Pro";
+      color: #343434;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      height: 100%
+    }
+    .noDisplay {
+      display: none;
+    }
+    .container .left_article h3 { /*Style for the header*/
+      padding-right: 5%;
+      padding-top: 1%;
+      margin-left: 15px;
+      /* margin-top: 5%; */
+      color: #323232;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .container .left_article p {
+      padding-right: 5%;
+
+      text-align: justify;
+      line-height: 24px;
+      /* margin-top: 30px; */
+      margin-bottom: 15px;
+      color: #717070;
+    }
+    .right_article {
+      width: 40%;
+      float: left;
+      background-color: #F6F6F6;
+    }
+  
+    .container .right_article ul {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+    .right_article ul li {
+      font-family: "Source Sans Pro";
+      list-style: none;
+      text-align: center;
+      background-color: #B3B3B3;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      color: #FFFFFF;
+      font-weight: bold;
+      border-radius: 0px;
+      transition: all 0.3s linear;
+      border-left: 5px solid #717070;
+    }
+    .right_article ul li:hover {
+      background-color: #717070;
+      cursor: pointer;
+    }
+    .footer {
+      background-color: #717070;
+    }
+    .title {
+      font-weight: bold;
+      font-style: normal;
+      font-family: "Source Sans Pro";
+      text-align: center;
+      color: #FFFFFF;
+      letter-spacing: 1px;
+    }
+    .placeholder {
+      /* [disabled]max-width: 400px;
+    */
+      /* [disabled]max-height: 200px;
+    */
+      width: 100%;
+      padding-top: 30px;
+      /* [disabled]padding-left: 19px;
+    */
+      padding-bottom: 30px;
+      height: 100%;
+    }
+    .left_half {
+      background-color: #52BAD5;
+    }
+    .container .column_half.left_half h2 {
+      color: #FFFFFF;
+      font-family: "Source Sans Pro";
+      text-align: center;
+    }
+    .right_half {
+      background-color: #01B2D1;
+      color: #FFFFFF;
+      font-family: "Source Sans Pro";
+      text-align: center;
+      font-weight: bold;
+    }
+    .copyright {
+      text-align: center;
+      background-color: #717070;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-weight: lighter;
+      letter-spacing: 2px;
+      border-top-width: 2px;
+      font-family: "Source Sans Pro";
+    }
+    body {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+    
+    @media (max-width: 320px) {
+    .secondary_header ul li {
+      float: none;
+      margin-top: 28px;
+      margin-left: 0px;
+      width: 100%;
+    }
+    .container .secondary_header ul {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      height: auto;
+      width: 100%;
+      text-align: center;
+    }
+    .secondary_header {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 1px;
+      padding-bottom: 40px;
+    }
+    .left_article {
+      width: 100%;
+      height: auto;
+    }
+    .right_article {
+      width: 100%;
+      height: auto;
+    }
+    .placeholder {
+      width: 100%;
+      margin-top: 22PX;
+      margin-right: 0px;
+      margin-bottom: 22PX;
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      max-width: 400px;
+      max-height: 200px;
+      height: auto;
+    }
+    .columns {
+      width: 100%;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 0PX;
+      padding-right: 0PX;
+      padding-bottom: 0PX;
+      padding-left: 0PX;
+    }
+    .columns p {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .column_half.left_half {width: 100%;}
+    .column_half.right_half {width: 100%;}
+
+
+    .social .social_icon img {width: 80%;}
+
+    }
+    
+    @media (min-width: 321px) and (max-width: 768px) {
+    .secondary_header ul li {
+      float: none;
+      margin-top: 28px;
+      margin-left: 0px;
+      width: 100%;
+    }
+    .container .secondary_header ul {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      height: auto;
+      width: 100%;
+      text-align: center;
+    }
+    .secondary_header {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 1px;
+      padding-bottom: 40px;
+    }
+    .left_article {
+      width: 100%;
+      height: auto;
+    }
+    .right_article {
+      width: 100%;
+      height: auto;
+      padding-bottom: 25px;
+    }
+    .placeholder {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+    }
+    .columns {
+      width: 100%;
+      margin-top: 6px;
+      margin-right: 0px;
+      margin-bottom: 6px;
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+    .columns p {
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+    .column_half.left_half {
+      width: 100%;
+    }
+    .column_half.right_half {
+      width: 100%;
+    }
+    }
+    
+    @media (min-width: 769px) and (max-width: 1000px) {
+    .secondary_header {
+      overflow: auto;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .secondary_header ul li {
+      margin-top: 10px;
+      margin-right: 7%;
+      margin-bottom: 10px;
+      margin-left: 7%;
+    }
+    .left_article {
+      height: auto;
+    }
+    .right_article {
+      height: auto;
+      padding-bottom: 27px;
+    }
+    .placeholder {
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .columns {
+      width: 50%;
+      float: left;
+      padding-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+    }
+    .container .columns p {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    }
+    
+
+    .thumbnail {
+      width: 100px;
+      border-radius: 200px;
+      height: 100px;
+      margin-left: auto;
+    }
+    .thumbnail_align {
+      text-align: center;
+    }
+    .social {
+      text-align: center;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      width: 100%;
+      background-color: #414141;
+      clear: both;
+      overflow: auto;
+    }
+    .social_icon {
+      width: 25%;
+      text-align: center;
+      float: left;
+      transition: all 0.3s linear;
+      line-height: 0px;
+      padding-top: 7px;
+    }
+    .container .social .social_icon:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+
+  </style>
+
+  <style>
+    .liLocation{font-size:10px;}
+    .left_article{ background:transparent;}
+    .left_article_p{ /*P elements in the master div*/
+      margin-left: 15px ;
+      text-indent: 20px;
+      padding-bottom: 15px;
+    }
+    .left_article_content{
+      background-color: white;
+      margin-left:5%;
+    }
+
+    .locationDivs{
+      float: left;
+      margin-top: 0px;
+      width:100%;
+      background-color: #52BAD5;
+      padding-bottom: 200px;
+    }
+
+    .locationDivs h2{padding-left: 15px;margin-bottom:0;}
+
+    .locationDivs p{
+      margin-left: 15px ;
+      margin-right: 15px;
+      padding-bottom: 15px;
+      text-indent: 20px;
+      line-height: 24px;
+      text-align: justify;
+      font-family: 'Segoe UI';
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+
+    .Informantion_Content{
+      display:inline-block;
+      width: 50%;
+      height: 100%;
+      text-indent: 20px;
+    }
+
+    .leftCol{
+      float:left;
+      height: 100%;
+      width:50%;
+      background-color: #52BAD5;
+    }
+
+    .rightCol{
+      display:inline-block;
+      float:left;
+      height: 100%;
+      width:50%;
+      background-color: #01B2D1;
+    }
+
+    .colTitle{
+      /* padding-top: 25px; */
+      /* padding-bottom: 25px; */
+      padding-left: 15px;
+    }
+
+
+
+    .listedItem{
+      text-indent: 10px;
+      font-size: 20px;
+    }
+
+    .listedItemInfo{
+      font-size: 1rem !important;
+      padding-left: 25px; 
+      padding-right: 25px;
+      padding-top: 5px;
+      padding-bottom: 10px;
+      text-indent: 25px;
+      line-height: 24px;
+
+    }
+
+    .mySlides{position: relative;}
+    .mySlides > img{
+      object-fit: contain;
+      width:100%;
+      max-height:600px;
+      margin: auto;
+    }
+
+    .imgCopyrightCaption{
+      text-align: center;
+      font-size: 12px;
+      text-decoration: none;
+    }
+
+    .imgCaption{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff73;
+      margin-bottom: 5px;
+      text-indent: 15px;
+      padding-right: 5px;
+      font-family: sans-serif;
+    }
+    .fixCol{
+      display:table-cell !important;
+      width: 50% !important;
+      height: 900px;
+    }
+    .fixTable{
+      display:table !important;
+      padding-bottom: 15px;
+      height: 100%;
+      width:100%; 
+    }
+
+    .FixFont{
+      line-height: 24px;
+      text-indent: 15px;;
+    }
+
+    .tabcontent p{
+      line-height: 24px;
+      text-indent: 15px;;
+    }
+    #first_container{
+      background-image: url('https://cdn.discordapp.com/attachments/707255329976746034/883081184970682408/2095.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 400px;
+      display: inline-block;
+      position: relative;
+    }
+    #fifth_container{
+      background-image: url('https://polarsteps.s3.amazonaws.com/u_43550/d7b13251-a9a6-4db6-958b-d302c3a8962d_04F9FE51-0AD2-4C7E-956A-D3F6B40A4FE2.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 400px;
+      display: inline-block;
+      position: relative;
+      margin-top:30px;
+  
+    }
+
+    #sixth_container{
+      background-image: url('https://i.pinimg.com/originals/56/b2/bd/56b2bd03fbaee2c5e4fcbfdf7a6aef06.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 400px;
+      display: inline-block; 
+      position: relative;
+    }
+
+    .tabImageCopyright{position: relative;float: left;top: -50px; left: 8px;color: black;}
+  </style>
+
+
+  <style>.mapouter{position:relative;text-align:right;height:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+  <style>.tooltip{position:relative;display:inline-block;border-bottom:1px dotted black;}.tooltip .tooltiptext{visibility:hidden;width:120px;background-color:black;color:#fff;text-align:center;border-radius:6px;padding:5px 0;position:absolute;z-index:1;top:-5px;left:110%;}.tooltip .tooltiptext::after{content:"";position:absolute;top:50%;right:100%;margin-top:-5px;border-width:5px;border-style:solid;border-color:transparent black transparent transparent;}.tooltip:hover .tooltiptext{visibility:visible;}</style>
+
+  <!--side navigation bar-->
+  <style>.sidenav{height:100%;width:0;position:fixed;z-index:1;top:0;left:0;background-color:#111;overflow-x:hidden;transition:.5s;padding-top:60px}.sidenav a{padding:8px 8px 8px 32px;text-decoration:none;font-size:25px;font-family:monospace;color:#818181;display:block;transition:.3s}.sidenav a:hover{color:#f1f1f1}.sidenav .closeSideBar{position:absolute;top:0;right:25px;font-size:36px;margin-left:50px}@media screen and (max-height:450px){.sidenav{padding-top:15px}.sidenav a{font-size:18px}}.AnimatedBtnContainer{cursor:pointer;float:right;position:fixed;right:0;margin-left:13px;margin-right:13px}.MenuBar1,.MenuBar2,.MenuBar3{width:35px;height:5px;background-color:#333;margin:6px 0;transition:.4s}.toggleAnimation .MenuBar1{-webkit-transform:rotate(-45deg) translate(-9px,6px);transform:rotate(-46deg) translate(-9px,6px)}.toggleAnimation .MenuBar2{opacity:0}.toggleSidenav{width:250px}.toggleAnimation .MenuBar3{-webkit-transform:rotate(45deg) translate(-8px,-8px);transform:rotate(45deg) translate(-8px,-8px)}</style>
+  <script>function toggleSideBar(x){document.getElementById("mySidenav").classList.toggle("toggleSidenav");document.getElementById("AnimiSideButton").classList.toggle("toggleAnimation");}</script>
+</head>
+
+<body>
+<div class="container">
+
+  <div id="NavigationMenu">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closeSideBar" onclick="toggleSideBar()">&times;</a>
+      <a onclick="toggleSideBar()" href="#Header 1">Header 1</a>
+      <a onclick="toggleSideBar()" href="#Header 2">Header 2</a>
+      <a onclick="toggleSideBar()" href="#Header 3">Header 3</a>
+      <a onclick="toggleSideBar()" href="#Header 4">Header 4</a>
+      <a onclick="toggleSideBar()" href="#Header 5">Header 5</a>
+      <a onclick="toggleSideBar()" href="#Header 6">Header 6</a>
+      <a onclick="toggleSideBar()" href="#Header 7">Header 7</a>
+      <a onclick="toggleSideBar()" href="#Header 8">Header 8</a>
+      <a onclick="toggleSideBar()" href="#Image Gallery">Image Gallery</a>
+    </div>
+
+    
+    <!--nav bar toggle in the top right-->
+    <div class="AnimatedBtnContainer" id="AnimiSideButton" onclick="toggleSideBar()">
+      <div class="MenuBar1"></div>
+      <div class="MenuBar2"></div>
+      <div class="MenuBar3"></div>
+    </div>
+  </div>
+
+  <header>
+    <div class="primary_header">
+        <h1 class="title" style="margin-bottom:0;">The Transcontinental Railroad</h1>
+        <div class="title">and its effects on America</div>
+    </div>
+  </header>
+
+  <div id="first_container">
+    <div class="left_article">
+      <div class="left_article_content">
+        <h3 id='Header 1'>Header 1</h3>
+        <div class="left_article_p">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales auctor erat, vel porta velit vehicula ut. Donec sodales accumsan risus sodales lobortis. Ut dignissim dui sed rhoncus auctor. Nullam mattis pretium erat at tempor. In vitae sapien tellus. In porta mi nulla, et maximus nulla ultrices eu. Duis ipsum nulla, tempus non semper eget, blandit id nunc.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales auctor erat, vel porta velit vehicula ut. Donec sodales accumsan risus sodales lobortis. Ut dignissim dui sed rhoncus auctor. Nullam mattis pretium erat at tempor. In vitae sapien tellus. In porta mi nulla, et maximus nulla ultrices eu. Duis ipsum nulla, tempus non semper eget, blandit id nunc.</p>
+        </div>
+      </div>
+    </div>
+    <a class="imgCopyrightCaption" style="float: right;margin-right:5px;" >Photo by <strong>Andrew J Russell</strong> • <strong>Union Pacific Railroad Museum</strong></a>
+    <!--<div class="right_article"><img src="images/placeholder.jpg" alt="" width="400" height="200" class="placeholder"/> </div> -->
+
+    <span class="imgCaption">East and West Shaking Hands at Laying of Last Rail, 1869.</span>
+  </div>
+
+  <!-- <div class="row">
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
+      <h4>Location</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
+      <h4>TITLE</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
+      <h4>TITLE</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
+      <h4>TITLE</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+  </div> -->
+
+  <!--second_container-->
+  <div id="second_container" class="row" style="background-color: #52BAD5;"> <!--Container for the Location and Weather Informantin-->
+    
+    <div class="leftCol">
+      <div class="locationDivs">
+        <h2 id='Header 2' class="column_title">Header 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean neque sapien, tristique sed augue in, ultricies efficitur orci. Praesent ac ipsum non tortor lacinia sollicitudin at vel orci. Vestibulum nec ultrices neque. Nunc odio enim, pellentesque vel facilisis nec, vulputate finibus turpis. Quisque ut neque vel erat placerat fermentum. Quisque euismod ipsum sit amet nisi lobortis dignissim. Aliquam ac feugiat augue, ut auctor nunc. Etiam pulvinar ullamcorper mi, in imperdiet risus cursus eget. Maecenas blandit leo sapien. Donec eget lobortis morbi.</p>
+        <h2 id='Header 3' class="column_title">Header 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat pellentesque nisl et maximus. Nulla facilisi. Sed faucibus volutpat nibh, a euismod nisi volutpat sed. Proin tincidunt, nisl at tincidunt consectetur, orci leo sagittis neque, non rhoncus magna urna at ex. Cras sollicitudin finibus dolor eget venenatis. Aliquam in arcu sit amet enim dictum sollicitudin sit amet in nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam lorem libero, malesuada vitae sollicitudin non, pretium eget velit. Proin malesuada metus quam, volutpat sit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet, erat sit amet vulputate varius, est tortor placerat turpis, quis posuere eros eros viverra nibh. Vivamus hendrerit mollis ligula a pharetra. Donec maximus magna sed leo ultrices, a ullamcorper enim laoreet. Cras placerat, lorem et accumsan sagittis, odio nunc pretium purus, in imperdiet urna leo sit amet nisi. Maecenas ac sapien sapien. Aenean porttitor posuere leo, ut placerat dui tristique eget. Cras efficitur accumsan felis quis rhoncus. Morbi est.</p>
+      </div>
+    </div>
+    
+    <div class="rightCol">
+      <div class="locationDivs" style="padding-bottom:5%;">
+        <h2 id='Header 2.2' class="column_title">Header 2.2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean neque sapien, tristique sed augue in, ultricies efficitur orci. Praesent ac ipsum non tortor lacinia sollicitudin at vel orci. Vestibulum nec ultrices neque. Nunc odio enim, pellentesque vel facilisis nec, vulputate finibus turpis. Quisque ut neque vel erat placerat fermentum. Quisque euismod ipsum sit amet nisi lobortis dignissim. Aliquam ac feugiat augue, ut auctor nunc. Etiam pulvinar ullamcorper mi, in imperdiet risus cursus eget. Maecenas blandit leo sapien. Donec eget lobortis morbi.</p>
+        <img style="width:90%;padding:5%;" alt="Storm over Rarotonga, Cook Islands" title="Storm over Rarotonga, Cook Islands" src="https://pngimg.com/uploads/number2/Number%202%20PNG%20images%20free%20download_PNG14925.png">
+        <div style="text-align: center;margin-top: -7px;">
+          <a class="imgCopyrightCaption" href="https://pngimg.com/uploads/number2/Number%202%20PNG%20images%20free%20download_PNG14925.png" target="_blank" style="text-decoration: none;">© Image 2 Copyright</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    
+  <!--third_container-->
+  <div id="third_container">
+    <div class="row fixTable">
+      <div class="leftCol fixCol">
+        <h2 id="Header 4" class="colTitle">Header 4</h2>
+        <div class="">
+          <ul class="listedItem">
+            <li>List item 1</li>
+              <div class="listedItemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et magna bibendum, consequat leo sed, condimentum libero. Donec nec tempor quam. Curabitur et nibh tortor. Praesent mauris purus, lacinia feugiat aliquet ut, commodo quis diam efficitur.</div>
+            <li>List item 2</li>
+              <div class="listedItemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et magna bibendum, consequat leo sed, condimentum libero. Donec nec tempor quam. Curabitur et nibh tortor. Praesent mauris purus, lacinia feugiat aliquet ut, commodo quis diam efficitur.</div>
+            <li>List item 3</li>
+              <div class="listedItemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et magna bibendum, consequat leo sed, condimentum libero. Donec nec tempor quam. Curabitur et nibh tortor. Praesent mauris purus, lacinia feugiat aliquet ut, commodo quis diam efficitur.</div>
+            <li>List item 4</li>
+              <div class="listedItemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et magna bibendum, consequat leo sed, condimentum libero. Donec nec tempor quam. Curabitur et nibh tortor. Praesent mauris purus, lacinia feugiat aliquet ut, commodo quis diam efficitur.</div>
+          </ul>
+        </div>
+      </div>
+      <div class="rightCol fixCol">
+        <h2 id="Header 5" class="colTitle">Header 5</h2>
+        <div class="">
+          <ul class="listedItem">
+            <li>List item 1 <span class="liLocation">small text 1</span></li>
+              <div class="listedItemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et magna bibendum, consequat leo sed, condimentum libero. Donec nec tempor quam. Curabitur et nibh tortor. Praesent mauris purus, lacinia feugiat aliquet ut, commodo quis diam efficitur.</div>
+            <li>List item 2 <span class="liLocation">small text 2</span></li>
+              <div class="listedItemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et magna bibendum, consequat leo sed, condimentum libero. Donec nec tempor quam. Curabitur et nibh tortor. Praesent mauris purus, lacinia feugiat aliquet ut, commodo quis diam efficitur.</div>
+            
+            <li>List item 3 <span class="liLocation">small text 3</span></li>
+              <div class="listedItemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et magna bibendum, consequat leo sed, condimentum libero. Donec nec tempor quam. Curabitur et nibh tortor. Praesent mauris purus, lacinia feugiat aliquet ut, commodo quis diam efficitur.</div>
+
+            <!--<li>Beaches <span class="liLocation">Avarua Harbor, Rarotonga.</span></li>
+              <div class="listedItemInfo">Info</div>
+            
+            <li>that one place <span class="liLocation">Avarua Harbor, Rarotonga.</span></li>
+              <div class="listedItemInfo">Info</div>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!--fourth_container-->
+  <!-- <div id="fourth_container" style="background-color:#01B2D1">
+    <style>.tab{overflow:hidden;border:1px solid #ccc;background-color:#f1f1f1;}.tab button{width:100%;background-color:inherit;float:left;border:none;outline:none;cursor:pointer;padding:14px 16px;transition:0.3s;font-size:17px;}.tab button:hover{background-color:#ddd;}.tab button.active{background-color:#ccc;}.tabcontent{display:none;padding:6px 12px;border-top:none;} </style>
+    <script>
+      function toggelTab1(){let dots = document.getElementById("tab1_dots");let moreText = document.getElementById("tab1_image");let btnText = document.getElementById("toggleTab1Image");if (dots.style.display === "none"){dots.style.display = "inline";btnText.innerHTML = "Show image";moreText.style.display = "none";} else{dots.style.display = "none";btnText.innerHTML = "Hide image";moreText.style.display = "inline";}}
+      function toggelTab2(){let dots = document.getElementById("tab2_dots");let moreText = document.getElementById("tab2_image");let btnText = document.getElementById("toggleTab2Image");if (dots.style.display === "none"){dots.style.display = "inline";btnText.innerHTML = "Show image";moreText.style.display = "none";} else{dots.style.display = "none";btnText.innerHTML = "Hide image";moreText.style.display = "inline";}}
+      function toggelTab3(){let dots = document.getElementById("tab3_dots");let moreText = document.getElementById("tab3_image");let btnText = document.getElementById("toggleTab3Image");if (dots.style.display === "none"){dots.style.display = "inline";btnText.innerHTML = "Show image";moreText.style.display = "none";} else{dots.style.display = "none";btnText.innerHTML = "Hide image";moreText.style.display = "inline";}}
+      function toggelTab4(){let dots = document.getElementById("tab4_dots");let moreText = document.getElementById("tab4_image");let btnText = document.getElementById("toggleTab4Image");if (dots.style.display === "none"){dots.style.display = "inline";btnText.innerHTML = "Show image";moreText.style.display = "none";} else{dots.style.display = "none";btnText.innerHTML = "Hide image";moreText.style.display = "inline";}}
+      function toggelTab5(){let dots = document.getElementById("tab5_dots");let moreText = document.getElementById("tab5_image");let btnText = document.getElementById("toggleTab5Image");if (dots.style.display === "none"){dots.style.display = "inline";btnText.innerHTML = "Show image";moreText.style.display = "none";} else{dots.style.display = "none";btnText.innerHTML = "Hide image";moreText.style.display = "inline";}}
+    </script>
+    <script>function openTab(evt,cityName){var i,tabcontent,tablinks;tabcontent = document.getElementsByClassName("tabcontent");for (i = 0;i < tabcontent.length;i++){tabcontent[i].style.display = "none";};tablinks = document.getElementsByClassName("tablinks");for (i = 0;i < tablinks.length;i++){tablinks[i].className = tablinks[i].className.replace(" active","");};document.getElementById(cityName).style.display = "block";evt.currentTarget.className += " active";}</script>
+    
+    
+    <h3 id="Header 6" style="text-align: center;padding-top:10px">Header 6</h3>
+
+
+    <div class="tab" style="display: flex;">
+      <button class="tablinks active" onclick="openTab(event, 'Tab 1')">Tab 1</button>
+      <button class="tablinks" onclick="openTab(event, 'Tab 2')">Tab 2</button>
+      <button class="tablinks" onclick="openTab(event, 'Tab 3')">Tab 3</button>
+      <button class="tablinks" onclick="openTab(event, 'Tab 4')">Tab 4</button>
+      <button class="tablinks" onclick="openTab(event, 'Tab 5')">Tab 5</button>
+    </div>
+
+    <div id="tabbedContentContainer" style="height:100%;">
+      <div id="Tab 1" class="tabcontent" style="display:block;">
+        <h3>Tab 1 Header</h3>
+        <p> tab1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare sodales dolor, vitae pellentesque mauris viverra nec. Ut libero diam, ullamcorper a viverra eget, commodo non dui. Suspendisse nec est pretium, elementum felis vitae, maximus felis. Aenean venenatis, nisl ut finibus accumsan, mauris tellus accumsan neque, id aliquet sem tellus sit amet neque. Ut aliquet non urna vel bibendum. Curabitur augue leo, congue sed malesuada eget, vehicula at nisl. Quisque id tempus sapien, eu mattis mi. Duis nec imperdiet metus. Sed bibendum ante sit amet augue tempus, ac lobortis ipsum ultrices. Etiam fringilla turpis eget justo finibus, ut convallis ipsum condimentum.</p>
+        
+        <button onclick="toggelTab1()" id="toggleTab1Image">Show image</button>
+        <span id="tab1_dots"></span>
+        <span id="tab1_image" style="display:none;">
+          <div style="width:100%;display:block;">
+            <img src="https://cdn.discordapp.com/attachments/707255329976746034/882735753392701461/one-706897_960_720.jpg" style="width:100%;"> 
+            <span class="tabImageCopyright"> <a target="_blank" href="https://cdn.discordapp.com/attachments/707255329976746034/882735753392701461/one-706897_960_720.jpg" class="imgCopyrightCaption"> © Tab 1 Image Copyright</a></span>
+          </div>
+        </span>
+      </div>
+      
+
+      <div id="Tab 2" class="tabcontent">
+        <h3>Tab 2 Header</h3>
+        <p> tab2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare sodales dolor, vitae pellentesque mauris viverra nec. Ut libero diam, ullamcorper a viverra eget, commodo non dui. Suspendisse nec est pretium, elementum felis vitae, maximus felis. Aenean venenatis, nisl ut finibus accumsan, mauris tellus accumsan neque, id aliquet sem tellus sit amet neque. Ut aliquet non urna vel bibendum. Curabitur augue leo, congue sed malesuada eget, vehicula at nisl. Quisque id tempus sapien, eu mattis mi. Duis nec imperdiet metus. Sed bibendum ante sit amet augue tempus, ac lobortis ipsum ultrices. Etiam fringilla turpis eget justo finibus, ut convallis ipsum condimentum.</p>
+        
+        <button onclick="toggelTab2()" id="toggleTab2Image">Show image</button>
+        <span id="tab2_dots"></span>
+        <span id="tab2_image" style="display:none;">
+          <div style="width:100%;display:block;">
+            <img src="https://cdn.discordapp.com/attachments/707255329976746034/882736993862295592/two-706896_960_720.jpg" style="width:100%;"> 
+            <span class="tabImageCopyright"> <a target="_blank" href="https://cdn.discordapp.com/attachments/707255329976746034/882736993862295592/two-706896_960_720.jpg" class="imgCopyrightCaption"> © Tab 2 Image Copyright</a></span>
+          </div>
+        </span>
+      </div>
+      
+      <div id="Tab 3" class="tabcontent">
+        <h3>Tab 3 Header</h3>
+        <p> tab3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare sodales dolor, vitae pellentesque mauris viverra nec. Ut libero diam, ullamcorper a viverra eget, commodo non dui. Suspendisse nec est pretium, elementum felis vitae, maximus felis. Aenean venenatis, nisl ut finibus accumsan, mauris tellus accumsan neque, id aliquet sem tellus sit amet neque. Ut aliquet non urna vel bibendum. Curabitur augue leo, congue sed malesuada eget, vehicula at nisl. Quisque id tempus sapien, eu mattis mi. Duis nec imperdiet metus. Sed bibendum ante sit amet augue tempus, ac lobortis ipsum ultrices. Etiam fringilla turpis eget justo finibus, ut convallis ipsum condimentum.</p>
+        
+        <button onclick="toggelTab3()" id="toggleTab3Image">Show image</button>
+        <span id="tab3_dots"></span>
+        <span id="tab3_image" style="display:none;">
+          <div style="width:100%;display:block;">
+            <img src="https://cdn.discordapp.com/attachments/707255329976746034/882737259013619722/three-706895_960_720.jpg" style="width:100%;"> 
+            <span class="tabImageCopyright"> <a target="_blank" href="https://cdn.discordapp.com/attachments/707255329976746034/882737259013619722/three-706895_960_720.jpg" class="imgCopyrightCaption"> © Tab 3 Image Copyright</a></span>
+          </div>
+        </span>
+      </div> 
+      
+      <div id="Tab 4" class="tabcontent">
+        <h3>Tab 4 Header</h3>
+        <p> tab4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare sodales dolor, vitae pellentesque mauris viverra nec. Ut libero diam, ullamcorper a viverra eget, commodo non dui. Suspendisse nec est pretium, elementum felis vitae, maximus felis. Aenean venenatis, nisl ut finibus accumsan, mauris tellus accumsan neque, id aliquet sem tellus sit amet neque. Ut aliquet non urna vel bibendum. Curabitur augue leo, congue sed malesuada eget, vehicula at nisl. Quisque id tempus sapien, eu mattis mi. Duis nec imperdiet metus. Sed bibendum ante sit amet augue tempus, ac lobortis ipsum ultrices. Etiam fringilla turpis eget justo finibus, ut convallis ipsum condimentum.</p>
+        
+        <button onclick="toggelTab4()" id="toggleTab4Image">Show image</button>
+        <span id="tab4_dots"></span>
+        <span id="tab4_image" style="display:none;">
+          <div style="width:100%;display:block;">
+            <img src="https://cdn.discordapp.com/attachments/707255329976746034/882737361040052234/four-706894_960_720.jpg" style="width:100%;"> 
+            <span class="tabImageCopyright"> <a target="_blank" href="https://cdn.discordapp.com/attachments/707255329976746034/882737361040052234/four-706894_960_720.jpg" class="imgCopyrightCaption"> © Tab 4 Image Copyright</a></span>
+          </div>
+        </span>
+      </div> 
+
+      <div id="Tab 5" class="tabcontent">
+        <h3>Tab 5 Header</h3>
+        <p> tab5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare sodales dolor, vitae pellentesque mauris viverra nec. Ut libero diam, ullamcorper a viverra eget, commodo non dui. Suspendisse nec est pretium, elementum felis vitae, maximus felis. Aenean venenatis, nisl ut finibus accumsan, mauris tellus accumsan neque, id aliquet sem tellus sit amet neque. Ut aliquet non urna vel bibendum. Curabitur augue leo, congue sed malesuada eget, vehicula at nisl. Quisque id tempus sapien, eu mattis mi. Duis nec imperdiet metus. Sed bibendum ante sit amet augue tempus, ac lobortis ipsum ultrices. Etiam fringilla turpis eget justo finibus, ut convallis ipsum condimentum.</p>
+        
+        <button onclick="toggelTab5()" id="toggleTab5Image">Show image</button>
+        <span id="tab5_dots"></span>
+        <span id="tab5_image" style="display:none;">
+          <div style="width:100%;display:block;">
+            <img src="https://cdn.discordapp.com/attachments/707255329976746034/882737467009167421/five-706893_960_720.jpg" style="width:100%;"> 
+            <span class="tabImageCopyright"> <a target="_blank" href="https://cdn.discordapp.com/attachments/707255329976746034/882737467009167421/five-706893_960_720.jpg" class="imgCopyrightCaption"> © Tab 5 Image Copyright</a></span>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <!--fifth_container-->
+  <div id="fifth_container"> 
+    <div class="left_article" style="float:right;margin-right:0;">
+        <div class="left_article_content" style="margin-right:5%">
+          <h3 id="Header 7">Header 7</h3>
+          <div class="left_article_p"> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices justo tortor, eget scelerisque arcu dictum ac. Sed maximus enim vitae purus gravida, et laoreet nunc rhoncus. Sed posuere enim at interdum ultricies. Phasellus vitae lacus sapien. Donec ac varius diam, at suscipit lorem. In hac habitasse platea dictumst. In pulvinar sem ipsum, a dictum sem rhoncus id. Vestibulum tempus eros ante. Ut volutpat hendrerit erat sit amet viverra.</p>
+          </div>
+        </div>
+    </div>
+    <a class="imgCopyrightCaption" style="float: left;margin-left: 10px;" href="https://www.davidkirklandphotography.com/-/galleries/cook-islands" target="_blank">© Photo By David Kirkland</a>
+    <span class="imgCaption">IMAGE CAPTION HERE</span>
+
+  </div>
+
+  <!--sixth_container-->
+  <div id="sixth_container"> 
+    <div class="left_article">
+        <div class="left_article_content">
+          <h3 id="Header 8">Header 8</h3>
+          <div class="left_article_p"> 
+            <p style="text-indent:25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ultrices odio, sed rhoncus mauris. Phasellus ac dolor nec nunc ornare varius id sed tellus. Integer ultrices commodo iaculis. Quisque rhoncus ornare lectus, vitae pretium diam aliquet vestibulum. Vestibulum porttitor rhoncus urna, at commodo erat faucibus consequat. Sed at est id velit auctor rhoncus. Aliquam porta, justo vel dapibus condimentum, nisl est viverra velit, eget hendrerit tellus arcu id tortor. Etiam feugiat purus a diam mollis luctus. Sed mattis vehicula neque sed euismod. Nulla porta mi nisl, quis ultrices nibh molestie ac. Nullam rhoncus sem sed nibh tincidunt hendrerit. Fusce efficitur accumsan nisi eu pulvinar. Phasellus eu justo aliquet, consectetur dui in, maximus tortor. Quisque justo tortor, ornare ut faucibus non, auctor eget neque. Vestibulum vel viverra libero, ac condimentum nisi. Sed luctus quis ex vitae maximus. Maecenas cursus lacus ac vestibulum interdum. Sed non quam tortor. Sed feugiat enim non purus cursus pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce luctus, dui non venenatis ultrices, quam mi sagittis enim, at posuere tellus orci at ante. Interdum et id.</p>
+            <p style="text-indent:25px;">Vestibulum vel viverra libero, ac condimentum nisi. Sed luctus quis ex vitae maximus. Maecenas cursus lacus ac vestibulum interdum. Sed non quam tortor. Sed feugiat enim non purus cursus pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce luctus, dui non venenatis ultrices, quam mi sagittis enim, at posuere tellus orci at ante. Interdum et id.</p>
+          </div>
+        </div>
+    </div>
+    <a class="imgCopyrightCaption" style="float: right;margin-right: 10px;" href="https://www.polarsteps.com/MarcelHohenstein" target="_blank">© Photo By Marcel Hohenstein</a>
+    <span class="imgCaption">IMAGE CAPTION HERE</span>
+
+  </div>
+
+
+
+
+  <!--PhotoGallery-->
+  <div style="width:100%;height:100%;background:#01B2D1;padding-top:1px;" id="imageGallery">
+    <!--Script and Style for the image slideshow-->
+    <style>img{vertical-align:middle;}.SlideContainer{position:relative;}.mySlides{display:none;}.slideCursor{cursor:pointer;}.prevSlide,.nextSlide{cursor:pointer;position:absolute;top:40%;width:auto;padding:16px;margin-top:-50px;color:white;font-weight:bold;font-size:20px;border-radius:0 3px 3px 0;user-select:none;-webkit-user-select:none;}.nextSlide{right:0;border-radius:3px 0 0 3px;}.prevSlide:hover,.nextSlide:hover{background-color:rgba(0,0,0,0.8);}.numbertext{color:#f2f2f2;font-size:12px;padding:8px 12px;position:absolute;top:0;}.caption-SlideContainer{text-align:center;background-color:#222;padding:2px 16px;color:white;}.SlideRow:after{content:"";display:table;clear:both;}.SlideColumn{float:left;width:16.66%;}.SlideDemo{opacity:0.4;filter:blur(1px);}.slideActive,.SlideDemo:hover{opacity:1;filter:blur(0);}</style>
+    <script>var slideIndex=1;function plusSlides(e){showSlides(slideIndex+=e)}function currentSlide(e){showSlides(slideIndex=e)}function showSlides(e){var l,s=document.getElementsByClassName("mySlides"),d=document.getElementsByClassName("SlideDemo"),n=document.getElementById("caption");for(e>s.length&&(slideIndex=1),e<1&&(slideIndex=s.length),l=0;l<s.length;l++)s[l].style.display="none";for(l=0;l<d.length;l++)d[l].className=d[l].className.replace(" slideActive","");s[slideIndex-1].style.display="block",d[slideIndex-1].className+=" slideActive",n.innerHTML=d[slideIndex-1].alt}showSlides(slideIndex);</script>
+
+    <h2 style="text-align:center" id="Image Gallery">Image Gallery</h2>
+
+    <div class="SlideContainer" style="background:rgba(2, 0, 5, 0.83)">
+      <div class="mySlides" style="display: block;">
+        <div class="numbertext">1 / 6 <br> <a target="_blank" href="https://www.theguardian.com/artanddesign/gallery/2019/feb/06/the-transcontinental-railroad-at-150-in-pictures">Photo by <strong>Alfred A Hart</strong> • <strong>Union Pacific Railroad Museum</strong></a> </div>
+        <img src="images/890.jpeg">
+        <!-- <span class="imgCaption">IMAGE CAPTION HERE</span> -->
+    </div>
+    
+      <div class="mySlides" style="display:none;">
+        <div class="numbertext">2 / 6 <br> <a target="_blank" href="https://www.theguardian.com/artanddesign/gallery/2019/feb/06/the-transcontinental-railroad-at-150-in-pictures">Photo by <strong>Charles R Savage</strong> • <strong>Union Pacific Railroad Museum</strong></a> </div>
+        <img src="images/2135.jpg">
+        <!-- <span class="imgCaption">IMAGE CAPTION HERE</span> -->
+      </div>
+
+      <div class="mySlides" style="display:none;">
+        <div class="numbertext">3 / 6 <br> <a target="_blank" href="https://www.theguardian.com/artanddesign/gallery/2019/feb/06/the-transcontinental-railroad-at-150-in-pictures">Photo by <strong>Alfred A Hart</strong> • <strong>Union Pacific Railroad Museum</strong></a> </div>
+        <img src="https://cdn.pixabay.com/photo/2015/04/04/19/13/three-706895_960_720.jpg" style="">
+        <!-- <span class="imgCaption">IMAGE CAPTION HERE</span> -->
+      </div>
+        
+      <div class="mySlides" style="display:none;">
+        <div class="numbertext">4 / 6 <br> <a target="_blank" href="https://www.theguardian.com/artanddesign/gallery/2019/feb/06/the-transcontinental-railroad-at-150-in-pictures">Photo by <strong>Alfred A Hart</strong> • <strong>Union Pacific Railroad Museum</strong></a> </div>
+        <img src="https://cdn.pixabay.com/photo/2015/04/04/19/13/four-706894_960_720.jpg" style="">
+        <!-- <span class="imgCaption">IMAGE CAPTION HERE</span> -->
+      </div>
+    
+      <div class="mySlides" style="display:none;">
+        <div class="numbertext">5 / 6 <br> <a target="_blank" href="https://www.theguardian.com/artanddesign/gallery/2019/feb/06/the-transcontinental-railroad-at-150-in-pictures">Photo by <strong>Alfred A Hart</strong> • <strong>Union Pacific Railroad Museum</strong></a> </div>
+        <img src="https://cdn.pixabay.com/photo/2015/04/04/19/13/five-706893_960_720.jpg" style="">
+        <!-- <span class="imgCaption">IMAGE CAPTION HERE</span> -->
+      </div>
+        
+      <div class="mySlides" style="display:none;">
+        <div class="numbertext">6 / 6 <br> <a target="_blank" href="https://www.theguardian.com/artanddesign/gallery/2019/feb/06/the-transcontinental-railroad-at-150-in-pictures">Photo by <strong>Alfred A Hart</strong> • <strong>Union Pacific Railroad Museum</strong></a> </div>
+        <img src="https://cdn.discordapp.com/attachments/707255329976746034/882744493873451045/38smChP4ygYVn3mPN2tXfFHtPvyV3scpdGJEo4HyrtwfaQR2P8V-wEpNStJaLxh-WEdGy1emI8LcFa9nQPMCInMvF5ltWZw.png" style="">
+        <!-- <span class="imgCaption">IMAGE CAPTION HERE</span> -->
+      </div>
+        
+      <a class="prevSlide" onclick="plusSlides(-1)">❮</a>
+      <a class="nextSlide" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-SlideContainer">
+        <p id="caption">Shoshone Indians Looking at the Locomotives, 1868</p>
+      </div>
+    <!--<style>
+      #caption{
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        }
+    </style>-->
+      <div class="SlideRow" style="background:white">
+        <div class="SlideColumn">
+          <img class="SlideDemo slideCursor slideActive" src="images/890.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Shoshone Indians Looking at the Locomotives, 1868">
+        </div>
+        <div class="SlideColumn">
+          <img class="SlideDemo slideCursor" src="images/2135.jpg" style="width:100%" onclick="currentSlide(2)" alt="Camping out early in the morning, 1875">
+        </div>
+        <div class="SlideColumn">
+          <img class="SlideDemo slideCursor" src="https://cdn.pixabay.com/photo/2015/04/04/19/13/three-706895_960_720.jpg" style="width:100%" onclick="currentSlide(3)" alt="Gallery Image 3 Alt">
+        </div>
+        <div class="SlideColumn">
+          <img class="SlideDemo slideCursor" src="https://cdn.pixabay.com/photo/2015/04/04/19/13/four-706894_960_720.jpg" style="width:100%" onclick="currentSlide(4)" alt="Gallery Image 4 Alt">
+        </div>
+        <div class="SlideColumn">
+          <img class="SlideDemo slideCursor" src="https://cdn.pixabay.com/photo/2015/04/04/19/13/five-706893_960_720.jpg" style="width:100%" onclick="currentSlide(5)" alt="Gallery Image 5 Alt">
+        </div>    
+        <div class="SlideColumn">
+          <img class="SlideDemo slideCursor" src="https://cdn.discordapp.com/attachments/707255329976746034/882745937238298704/six.png" style="width:100%" onclick="currentSlide(6)" alt="Gallery Image 6 Alt">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--
+  <div class="social">
+    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
+  </div>
+-->
+
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2021 - <strong>Ayden Kelly</strong></div>
+  </footer>
+</div>
+</body>
+</html>
