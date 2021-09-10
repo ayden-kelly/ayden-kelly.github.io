@@ -1,0 +1,81 @@
+.sidenav {
+    background-color: #111;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: 1;
+    transition: .5s;
+    padding-top: 60px;
+    overflow-x: hidden;
+    opacity: 0;
+}
+
+/* header text */
+.sidenav a {
+    padding: 15px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: monospace;
+    color: #818181;
+    display: block;
+    transition: .1s;
+}
+.sidenav a:hover{color: #f1f1f1;text-decoration: underline;}
+
+.sidenav_title{padding-bottom: 0 !important;}
+
+.sidenav_subtitle{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+
+
+
+.sidenav .closeButton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height:450px) {
+    .sidenav {padding-top: 15px}
+    .sidenav a {font-size: 18px}
+}
+
+.AnimatedBtnContainer {
+    cursor: pointer;
+    float: right;
+    position: fixed;
+    right: 0;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.showSidenav {width: 350px;opacity: 1;}
+
+.MenuBar1, .MenuBar2, .MenuBar3 {
+    background-color: #333;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: .4s;
+}
+
+.toggleAnimation .MenuBar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-46deg) translate(-9px, 6px)
+}
+
+.toggleAnimation .MenuBar2 {opacity: 0}
+
+.toggleAnimation .MenuBar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px)
+}
+
+
